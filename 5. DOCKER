@@ -349,7 +349,7 @@ docker ps -a -q
 docker kill $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 docker rmi -f $(docker images -q)
-
+==========================================================
 DAY-04: 12-10-2023
 DOCKER COMPOSE & DOCKER HUB
 
