@@ -433,22 +433,22 @@ HISTORY:
    47  cat main.tf
    48  terraform import aws_instance.one i-02366c0cb62440bbb
    49  terraform state list
-   50  cat terraform.tfstate
-   51  cat -n terraform.tfstate
+   50  cat terraform.tfstate   (information is available)
+   51  cat -n terraform.tfstate  (142 lines of code)
    52  terraform destroy --auto-approve
-   53  vim main.tf
+   53  vim main.tf  (teraform we need to create bucket and ebs volume and iam create)
    54  terraform apply --auto-approve
    55  terraform state list
    56  cat main.tf
    57  terraform state list
    58  terraform apply --auto-approve
-   59  terraform state list
+   59  terraform state list  (re create the objects) 
    60  terraform taint aws_instance.one
    61  terraform apply --auto-approve
-   62  terraform state list
-   63  terraform taint aws_s3_bucket.two
+   62  terraform state list  (all ready we have severs but some time its crashed so we can recreate)
+   63  terraform taint aws_s3_bucket.two  (some times resource are crashed so we can recteare)
    64  terraform taint aws_iam_user.four
-   65  terraform taint aws_iam_group.five
+   65  terraform taint aws_iam_group.five   ( group ni taint cheyakudadhu (so taint chesintey untaint command we can use)
    66  terraform untaint aws_iam_group.five
    67  terraform apply --auto-approve
    68  history
