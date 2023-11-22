@@ -244,13 +244,13 @@ HISTORY:
 
 DAY-02: 31-10-2023
 
-TFVARS, CLI, OUTPUTS, IMPORT, RESOURCES, TAINT
+TFVARS(muntipul configutarion and mul var and mul  values adding, CLI, OUTPUTS, IMPORT, RESOURCES, TAINT
 
 TERRAFORM TFVARS:
 we use tfvar files when we have multiple conifurations.
 each configuration we can write on variable file and attach it while running.
 
-cat main.tf
+cat main.tf      (vim main.tf) (we have the main.tf then we can create a variable block)
 provider "aws" {
 }
 
@@ -263,11 +263,11 @@ Name = var.instance_name
 }
 
 
-cat variable.tf
+cat variable.tf   (we need to write variable block)
 variable "ami_id" {
 }
 
-variable "instance_type" {
+variable "instance_type" { (variable blocks are here but valunes are not here)
 }
 
 variable "instance_name" {
@@ -301,7 +301,7 @@ resource "aws_instance" "one" {
 ami = "ami-0a1aabd978d1ea0a5"
 instance_type = var.instance_type
 tags = {
-Name = "raham"
+Name = "raham"   (server name raham)
 }
 }
 
@@ -388,10 +388,10 @@ HISTORY:
     2  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releas                                                        es.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
     3  sudo apt update && sudo apt install terraform
     4  apt install awscli -y
-    5  aws configure
-    6  mkdir terrafor
+    5  aws configure   Acces key and secreate key and region and table format
+    6  mkdir terrafor  
     7  cd terrafor/
-    8  vim main.tf
+    8  vim main.tf   
     9  vim variable.tf
    10  cat main.tf
    11  vim dev.tfvars
@@ -400,10 +400,10 @@ HISTORY:
    14  cat variable.tf
    15  cat dev.tfvars
    16  cat test.tfvars
-   17  terraform init
-   18  terraform plan
+   17  terraform init    Plugins are install
+   18  terraform plan     
    19  terraform plan -var-file="dev.tfvars"
-   20  terraform apply --auto-approve  -var-file="dev.tfvars"
+   20  terraform apply --auto-approve  -var-file="dev.tfvars"  (-var-file="dev.tfvars"teraform configuration file thesukoni variables apply chey)
    21  terraform state list
    22  terraform destroy --auto-approve  -var-file="dev.tfvars"
    23  cd
@@ -414,11 +414,11 @@ HISTORY:
    28  terraform apply --auto-approve  -var-file="test.tfvars"
    29  terraform destroy --auto-approve  -var-file="test.tfvars"
    30  rm -rf dev.tfvars test.tfvars variable.tf
-   31  vim main.tf
+   31  vim main.tf   (var we need to pass cli) 
    32  cat main.tf
    33  terraform apply --auto-approve -var="instance_type=t2.medium"
    34  terraform destroy --auto-approve -var="instance_type=t2.medium"
-   35  terraform apply --auto-approve
+   35  terraform apply --auto-approve    ( t2.micro)
    36  terraform destroy --auto-approve
    37  vim main.tf
    38  terraform apply --auto-approve
