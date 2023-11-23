@@ -556,8 +556,8 @@ Terraform Graph: to show the blue frint of infra.   (****)
 terraform graph : copy the code and past it on 
 graphwiz online 
 
-
-TERRAFORM BACKEND SETUP:
+{In local lo statefile is delete avuthey remote lo s3 lo backup peytukunta}   
+TERRAFORM BACKEND SETUP: 
 in real time state file we need to keep backup and secure on remote laction.
 for that purpose we need to use s3.
 the state file will be store on s3 for saftey.
