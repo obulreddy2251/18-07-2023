@@ -463,7 +463,7 @@ once we define a value we can use it multipple times.
 if you change value on local block all the values will be replaced to all block.
 
 
-provider "aws" {
+provider "aws" {  (1)We need create vpc inside subnet inside ec2 instance create)
 }
 
 locals {
@@ -471,13 +471,13 @@ env = "prod"
 }
 
 resource "aws_vpc" "one" {
-cidr_block = "10.0.0.0/16"
+cidr_block = "10.0.0.0/16"        ( we need to subnet create so we want range classa classb Like thse)
 tags = {
 Name = "${local.env}-vpc"
 }
 }
 
-resource "aws_subnet" "two" {
+resource "aws_subnet" "two" {      (we need to create a server or ec2 instance)
 vpc_id = aws_vpc.one.id
 cidr_block = "10.0.0.0/24"
 availability_zone = "ap-southeast-2a"
@@ -496,9 +496,9 @@ Name = "${local.env}-server"
 }
 
 
-TERRAFORM WORKSPACE:
+TERRAFORM WORKSPACE:  (****** intview )
 Workspace: its a place where we write our code.
-It is used to isloate the resources.
+Trfwrk It is used to isloate the resources.   (resource ni isolate chestham)
 all the commands will work on workspace only.
 without workspace we cant run commands and we cant create resources.
 
@@ -552,7 +552,7 @@ Name = "${local.env}-server"
 }
 
 Terraform fmt: used to set the indentation for terraform files.
-Terraform Graph: to show the blue frint of infra.
+Terraform Graph: to show the blue frint of infra.   (****)
 terraform graph : copy the code and past it on 
 graphwiz online 
 
@@ -616,7 +616,7 @@ resource "aws_ebs_volume" "three" {
 resource "aws_iam_user" "four" {
   name = "rahams"
 }
-
+ 
 resource "aws_iam_group" "five" {
   name = "devops"
 }
@@ -631,49 +631,49 @@ HISTORY:
    75  terraform destroy --auto-approve
    76  cd terrafor/
    77  ll
-   78  vim main.tf
+   78  vim main.tf    ( vcp and subnet ans ec2instance)
    79  terraform init
-   80  terraform plan
-   81  terraform plan -out
+   80  terraform plan   ( execution plan is creating)
+   81  terraform plan -out   ( execution plan to save a file)
    82  terraform plan -help
    83  terraform apply --auto-approve
    84  vim main.tf
    85  terraform apply --auto-approve
-   86  terraform state list
-   87  vim main.tf
+   86  terraform state list       (vcp sub ec2 is created(go and check server)
+   87  vim main.tf                (vcp sub ec2 test)
    88  terraform apply --auto-approve
-   89  vim main.tf
+   89  vim main.tf                (in feacture lo production)
    90  terraform apply --auto-approve
    91  terraform destroy --auto-approve
-   92  vim main.tf
-   93  terraform workspace list
-   94  terraform workspace new dev
-   95  vim main.tf
+   92  vim main.tf                (*** whta is work space ***imp interview)     
+   93  terraform workspace list   ( by default work space is here)
+   94  terraform workspace new dev ( dev is create and switch)
+   95  vim main.tf                ( Work space code)
    96  terraform apply --auto-approve
-   97  terraform state list
-   98  terraform workspace new test
-   99  terraform workspace list
-  100  terraform workspace show
-  101  vim main.tf
-  102  terraform apply --auto-approve
-  103  terraform workspace new prod
-  104  vim main.tf
-  105  terraform apply --auto-approve
+   97  terraform state list     ( instance lo refresh dev is came)
+   98  terraform workspace new test  (testing workspace is creating )
+   99  terraform workspace list    (total work is dispaly)
+  100  terraform workspace show     (show means current work is avaialable)
+  101  vim main.tf                 (change code)
+  102  terraform apply --auto-approve  ( instance lo refresh)
+  103  terraform workspace new prod    (
+  104  vim main.tf                   (change code for regions)
+  105  terraform apply --auto-approve (instance lo refresh
   106  terraform workspace delete prod
   107  terraform workspace select test
   108  terraform workspace show
   109  terraform workspace delete prod
-  110  terraform workspace select prod
-  111  terraform state list
-  112  terraform destroy --auto-approve
+  110  terraform workspace select prod    
+  111  terraform state list    ( show the list)
+  112  terraform destroy --auto-approve   (here deleting the resource)
   113  terraform workspace select test
   114  terraform workspace delete prod
   115  terraform workspace list
   116  terraform destroy --auto-approve
   117  terraform workspace select dev
   118  terraform workspace delete test
-  119  terraform graph
-  120  terraform destroy --auto-approve
+  119  terraform graph    ( you want to infrasructure we want to blue print )
+  120  terraform destroy --auto-approve (*** browser grafanalabs graph  content paste it will give blue print)
   121  terraform workspace select default
   122  terraform workspace delete dev
   123  terraform workspace list
