@@ -683,10 +683,10 @@ HISTORY:
   127  cat main.tf
   128  terraform workspace list
   129  terraform state list
-  130  vim main.tf
+  130  vim main.tf    (S3 bucket file)
   131  terraform init
   132  terraform apply --auto-approve
-  133  ll
+  133  ll    (State file will come to the s3 bucket and here refresh)
   134  cat -n terraform.tfstate
   135  cat -n terraform.tfstate.
   136  cat -n terraform.tfstate.backup
