@@ -519,7 +519,7 @@ terraform workspace select test	: to switch blw workspaces
 terraform workspace delete test	: to delete the workspaces
 
 
-provider "aws" {
+provider "aws" { 
 }
 
 locals {
@@ -568,7 +568,7 @@ Create a bucket manually.
 provider "aws" {
 }
 
-terraform {
+terraform {      
   backend "s3" {
     bucket = "rahamterraoprodbucket9988"
     key    = "prod/terraform.tfstate"
@@ -666,9 +666,9 @@ HISTORY:
   110  terraform workspace select prod    
   111  terraform state list    ( show the list)
   112  terraform destroy --auto-approve   (here deleting the resource)
-  113  terraform workspace select test
-  114  terraform workspace delete prod
-  115  terraform workspace list
+  113  terraform workspace select test   (select)
+  114  terraform workspace delete prod    (delete)
+  115  terraform workspace list           (list)
   116  terraform destroy --auto-approve
   117  terraform workspace select dev
   118  terraform workspace delete test
@@ -692,7 +692,7 @@ HISTORY:
   136  cat -n terraform.tfstate.backup
   137  ll
   138  vim main.tf
-  139  terraform fmt
+  139  terraform fmt  ( to get the brases formet)
   140  terraform apply --auto-approve
   141  vim main.tf
   142  terraform apply --auto-approve
@@ -702,6 +702,7 @@ HISTORY:
   146  cat terraform.tfstate
   147  cat main.tf
   148  history
+local state file is delete and to backup remote state files is having to retrive the data
 
 ==========================
 
