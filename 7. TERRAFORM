@@ -636,9 +636,9 @@ HISTORY:
    80  terraform plan   ( execution plan is creating)
    81  terraform plan -out   ( execution plan to save a file)
    82  terraform plan -help
-   83  terraform apply --auto-approve  (we will get errorap-south -la  is not taken give 2a)
+   83  terraform apply --auto-approve  
    84  vim main.tf
-   85  terraform apply --auto-approve
+   85  terraform apply --auto-approve   (we will get errorap-south -la  is not taken give 2a)
    86  terraform state list       (vcp sub ec2 is created(go and check server)
    87  vim main.tf                (vcp sub ec2 test)
    88  terraform apply --auto-approve
