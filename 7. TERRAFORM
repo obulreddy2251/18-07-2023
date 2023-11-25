@@ -1029,19 +1029,19 @@ last 2 days
     8  cd terraform/
     9  vi main.tf
    10  terraform init
-   11  terraform validate
+   11  terraform validate   (we need to show the systax errors Like brases)
    12  vim main.tf
    13  terraform validate
-   14  vim main.tf
+   14  vim main.tf  
    15  terraform fmt
-   16  terraform plan
-   17  terraform apply --auto-approve
-   18  terraform destroy --auto-approve
+   16  terraform plan      (format is creating)
+   17  terraform apply --auto-approve    (creating a server)
+   18  terraform destroy --auto-approve   (file lo true is given we cant destroy)
    19  vim main.tf
-   20  terraform destroy --auto-approve
-   21  vim main.tf
+   20  terraform destroy --auto-approve    (in these file is geven false so we can destroy now)
+   21  vim main.tf                      Create before destroy           
    22  terraform apply --auto-approve
-   23  terraform destroy --auto-approve
+   23  terraform destroy --auto-approve   (
    24  vim /root/.aws/credentials
    25  terraform apply --auto-approve
    26  terraform destroy --auto-approve
