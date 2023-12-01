@@ -72,17 +72,17 @@ git log --oneline	: to see commits history in single line
 HISTORY:
  1  mkdir insta
     2  cd insta/
-    3  yum install git -y
+    3  yum install git -y  to install git
     4  ll -a
-    5  git init
+    5  git init         to set local repo
     6  ll -a
     7  touch file1
-    8  git status
-    9  git add file1
+    8  git status           Untrack mode lo vundhi
+    9  git add file1        file is tracking (blue color)
    10  git status
    11  git commit -m "ver-1" file1
    12  ll
-   13  git status
+   13  git status       to see the status of file
    14  touch index.html
    15  git add index.html
    16  git commit -m "v-1" index.html
@@ -93,9 +93,9 @@ HISTORY:
    21  git commit -m "abc" file2
    22  ll
    23  git status
-   24  git log
-   25  git log --oneline
-   26  history
+   24  git log     (how many file commit to give the list)
+   25  git log --oneline  (we have to give the single)   
+   26  history  (server history)
 ====================================================
 DAY-02: 12-09-2023
 BRANCHES, GITHUB
