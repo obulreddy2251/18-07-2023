@@ -335,17 +335,17 @@ Merge concept(one branch file to move the another branch is called git merge)
    85  cat index.html
    86  git fetch
    87  git branch
-   88  git branch -D master
-   89  git branch -D train
+   88  git branch -D master 
+   89  git branch -D train to delete the branch
    90  git branch
    91  git pull origin train
    92  git branch
    93  git checkout train
    94  ll
    95  git branch
-   96  git branch -m train raham
+   96  git branch -m train raham     to rename the branch
    97  git branch
-   98  git branch -m raham train
+   98  git branch -m raham train      to rename the branch
    99  git branch
   100  history
 how to delete branch
