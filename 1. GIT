@@ -191,6 +191,7 @@ we can merge code of multiple developers.
    69  git checkout dth
    70  ll
    71  history
+(git merge  : one branch files to move another branch )
 =======================================================================================
 DAY-03: 13-09-2023
 
@@ -283,10 +284,11 @@ HISTORY:
    35  git push origin train
    36  git push origin dth
    37  git push origin recharge
+Merge concept(one branch file to move the another branch is called git merge)
    38  git branch
    39  git checkout master
    40  ll
-   41  git merge movies
+   41  git merge movies (merge rebase both are equal )
    42  ll
    43  git merge train
    44  ll
@@ -294,7 +296,7 @@ HISTORY:
    46  ll
    47*
    48  ll
-   49  git revert recharge
+   49  git revert recharge  ( by mistake the merge files to back means for using git revert recharge)
    50  ll
    51  git revert dth
    52  ll
