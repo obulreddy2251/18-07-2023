@@ -348,6 +348,15 @@ Merge concept(one branch file to move the another branch is called git merge)
    98  git branch -m raham train
    99  git branch
   100  history
+how to delete branch
+git branch -D train
+
+How to recover the branch
+
+git pull origin train
+git checkout tarin
+ll
+git branch
 
 ========================================================
 DAY-04: 14-09-2023
