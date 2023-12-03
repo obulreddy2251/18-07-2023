@@ -97,13 +97,13 @@ HISTORY:
     6  rm -rf Jenkinsfile
     7  ll
     8  tree
-    9  mvn compile
-   10  ll
+    9  mvn compile   (we have to source code mopile is sucess)
+   10  ll          (  target lo .class file is generate)
    11  tree
-   12  mvn test
-   13  mvn package
+   12  mvn test      ( mvn test we have to source code test)
+   13  mvn package    ( we have to convert into  artifact)
    14  tree
-   15  mvn install
+   15  mvn install     ( mvn install path is going to maven home the is goin
    16  ll /root/.m2/repository/in/RAHAM/NETFLIX/1.2.2/
    17  ll
    18  mvn clean
@@ -111,7 +111,7 @@ HISTORY:
    20  mvn package
    21  mvn clean
    22  ll
-   23  mvn clean package
+   23  mvn clean package ( Mvn clean package building testing artifact install clean )
    24  cd src/
    25  ll
    26  tree
