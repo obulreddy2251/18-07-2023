@@ -147,6 +147,23 @@ git pull origin master
 To show the changes github to git but it will not visible. 
 git fetch origin master.
 
+                 //How to delete the branches?//
+
+git branch -D train  
+Current branch we cant the delete.
+How to back up the branch ?
+git pull origin tarin            To restore the branch
+git checkout  train
+ll
+git branch
+                  //How to rename the brach?//
+git branch -m train obul
+git branch
+git branch -m obul train
+
+
+
+
 
 
 
