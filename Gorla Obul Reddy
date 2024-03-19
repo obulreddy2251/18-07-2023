@@ -1,1 +1,58 @@
-GIT 
+Settings,ssh,sshkeepalive to avtivate
+What is devops ?
+Software development lyfe cycle to automate the devops and to release the application.
+Development team(planning coding build testing) Operation team(Release Deployment operate monitrate)
+
+What is application?
+It is a software. 
+Application is a combination of service which is used by the user.
+Git full form ?
+Global information(means source code) we can tracker
+
+version control system (or) source code management 
+vcs meaning: it will store each version code is seperately
+
+                  What is git ?
+Git is a distrubuted version control system
+git is used to we can track the multipul files
+it will maintain multiple version of the same file.
+it is platform independent and it is free opensource
+They can handle large projects of efficently
+its written on c Program
+its came on 2005
+
+platform independent(means you can install windows or macos or linux it will work)
+
+443 status code(in a file system particular part is damage so we willget the 443)
+
+                 Git archicture ?
+Working Directory: where we write the source code 
+Staging area:  where we track the source code
+Reporsitory: where we store trackd code
+Creating a workig directory
+mkdir college  
+cd college/
+yum install git -y    (yum pkg we need to install git -y yes)
+git init
+ll -a
+Note: .git we cant run any commands of git
+We can crate a file and  we can track file and we can save the file
+
+touch file1                      To create a file
+git status 
+git add file1                    To track file
+git status                       To check the status of file
+git commit -m "ver-1" file       To save file
+
+How many files are commited to give the list (git log).
+git log
+I want out put single line.
+git log --oneline
+ 
+
+
+
+
+
+
+
