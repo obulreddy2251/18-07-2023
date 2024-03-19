@@ -102,6 +102,69 @@ ll
 git chechout apple
 ll
 
+                    //Git Merge// git rebase//
+
+We have to merge the one branch to another branch files.
+git checkout master
+git merge movies
+git merge obul
+git merge dth
+git merge samsung
+git rebase reddy
+
+                      //How to merge the github//
+ pullrequest  newpullrequest  createpullrequest againpullrequest  mergepullrequest
+ conform merge  Done
+
+                     //How to revert the files//
+How to merging one branch files to  another branch files to backup we can use the revert
+git checkout master
+git revert recharge
+ll
+git revert obul
+ll
+git revert dth
+git revert reddy
+
+                   // Git clone//
+Git clone is used to download the github repository to local.
+The repo must be public.
+
+                  // Git fork // 
+How to download the one repository to another r epository.
+How to download the repository from github to github so we can use fork.
+The repo must be public.
+
+                  //Git Push//
+we have to push the code local repo to github repo.
+
+                  // git pull// 
+we have to pull the code gubhub to local repo.
+we have to change the github it will reflect the git
+git pull origin master
+
+                  //Git fetch
+To show the changes github to git but it will not visible. 
+git fetch origin master.
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+ 
+
+
+
+
 
 
 
