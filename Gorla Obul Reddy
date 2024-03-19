@@ -48,6 +48,10 @@ How many files are commited to give the list (git log).
 git log
 I want out put single line.
 git log --oneline
+                     
+           ((.git means these is local repo))
+Each developer write the source code we need to push the github
+
  
 
 
