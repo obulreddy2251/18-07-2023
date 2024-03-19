@@ -50,7 +50,41 @@ I want out put single line.
 git log --oneline
                      
            ((.git means these is local repo))
-Each developer write the source code we need to push the github
+Each developer will write the source code we need to push the github
+
+
+git branch  To see the branch
+if we want to see the branch we need to inital commit then only we see.
+We need to create the appplication  so we can index.html
+vim index.html   
+git add index.html
+git status
+git commit -m "abc" index.html
+git branch           Now we can the branch
+
+How to crate a branch
+git branch apple
+git checkout apple
+touch apple{1..5}    Now we have working directory
+git add movies*      Now we have tracked
+git commmit -m "dev-1" apples*   Now we have committed
+
+git checkout -b banana   branch is created then go to the branch
+touch banana{1..5}
+git add banana*
+git commit -m "dev-3" banana*
+
+ 
+
+
+
+
+
+
+
+
+
+ 
 
  
 
