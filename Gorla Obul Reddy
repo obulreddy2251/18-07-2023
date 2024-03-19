@@ -74,7 +74,18 @@ touch banana{1..5}
 git add banana*
 git commit -m "dev-3" banana*
 
- 
+How to connect github to git 
+we can use these command git remote add orgin https://github.com/obul2251/paytm.git
+ll -a local .git to paytm .git connect.
+
+                    (Now we can push the code) 
+git checkout master
+git push origin master
+username:obul2251
+passwd:
+How to create a token go to settings developersettings Personalaccestoken tokensclassic
+Generate new token  generate new token classic TOkenName:Paytm first 6 select then generate token
+
 
 
 
