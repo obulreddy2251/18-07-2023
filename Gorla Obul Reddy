@@ -49,8 +49,10 @@ How many files are commited to give the list (git log).
 git log
 I want out put single line.
 git log --oneline
+last two lines
+git --oneline -2
                      
-           ((.git means these is local repo))
+           //.git means these is local repo//
 Each developer will write the source code we need to push the github
 
 
@@ -161,22 +163,43 @@ git branch -m train obul
 git branch
 git branch -m obul train
 
+                  //Merge(means add)conflict  //
+when we can merge 2 differents branches with same file and different code conflicts will occur
+How to reslove: To resolve Manually.
+
+If we have comitted how many file are attached it will  (git show)
+git show  id paste  
+
+                    //Git cherry pick//
+it will merge the specific files from one branch to anotherbranch.
+we can use committed id
+git log --oneline
+git cherry-pick (java-id paste)
 
 
+                      //Git Stash//
+it will hide the files temperorly
+it will applicable for tracked files   
+Some files are work is not comple so we cantemparory hide these file.
+touch php
+git add php
+git status      php files work is not compele
+git stash
+ll              file is not showing
+
+How to backup the stash file.
+git stash list            To show the list
+git stash apply            
+git stash clear           To delete all stash
+git stash pop             pop is delete last stash
 
 
+                      //Tags//
 
-
-
-
-
-
-
-
-
-
-   
-
+git tag
+git tag -i list
+git tag -a v1.10 -m "ver" tags"
+git tag -l
  
 
 
