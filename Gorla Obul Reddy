@@ -246,8 +246,22 @@ mvn clean            Target folder is delete
 mvn clean package
 
 
+                     //How to check the source errors//
+cd src/
+ll
+tree
+vim main/java/in/javahome/myweb/controller/Calculator.java
+you can change code  
+save 
+mvn compile (build is failures)
+cd ..
+ll
+mvn compile
 
-
+                      //update the java version//
+amazon-linux-extras install java-openjdk11 -y
+update-alternatives --config java
+ 
 
 
 
