@@ -201,6 +201,42 @@ git tag -i list
 git tag -a v1.10 -m "ver" tags"
 git tag -l
  
+====================================================================================
+                  //Maven is a build tool//
+Code compile  test Artifact 
+How to deploy code?
+Developer Code Artifact  Deoloy
+
+                //How to creatr a articat?//
+We can use buld tool?
+
+Maven is a build tool or project management tool.
+It will manage java dependency and packages for code.
+It is written java by apache software foundation.
+it came on 2004
+it is a free open source
+It is used for mainly java projects
+home path .m2    (home directory)
+java-1.8.0
+
+POM project object mode
+XML Extensible markup language
+ 
+
+yum install git java-1.8.0-openjdk maven tree -y
+git cole pastelink
+ll 
+cd jenlins-java-project/
+ll src pom.xml is there
+                          //maven lyfe cycle//
+codecompile  test  Artifactnipackage Install Deploy clean
+Githuh sourcecoce goalsexecute pom.xml to check plegins then execute the goals
+
+
+
+
+
+
 
 
 
