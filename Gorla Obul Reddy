@@ -232,6 +232,18 @@ ll src pom.xml is there
 codecompile  test  Artifactnipackage Install Deploy clean
 Githuh sourcecoce goalsexecute pom.xml to check plegins then execute the goals
 
+                        //How to create a artifact?//
+mvn clean
+mvn compile
+ll                  target file came
+tree                .class file added
+mvn test            unit test operating
+                    we have to create  artifact
+mvn package 
+mvn install   
+mvn clean            Target folder is delete
+
+mvn clean package
 
 
 
