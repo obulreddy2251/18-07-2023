@@ -277,7 +277,7 @@ Contineous Deployment: Application to automation deployment to production
 Deployment: Process off installing the application to App server.  
 
 
-ENV 
+ENV  Or Evn is nothing but Servers
 DEV: De velopers
 QA: Testers
 UAT: Client  
@@ -315,7 +315,25 @@ NETFLIX 12.3.WAR ----- DONE
 
        ///200 To download url internet to server/// 
 
+First buld code
 
+How to create a job?
+new item -- > name -- > free style -- > ok -- > Build Steps -- > execute shell
+we can run linux coomands on execute shell.
+
+Global variable: These variable will work on outsie job.
+Dashboard Managejenkins  Systems Global,properties Env variable click
+add  == name == values ==add == name == values   Save  job build
+
+Jenkins enroirment variables:
+These variables will be given by jenkins.
+User cant define jenkins variables.
+
+
+
+
+
+ 
 
 
  
