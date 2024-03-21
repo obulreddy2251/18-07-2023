@@ -261,7 +261,72 @@ mvn compile
                       //update the java version//
 amazon-linux-extras install java-openjdk11 -y
 update-alternatives --config java
+
+==================================================================================
+                            //Jenkins//
+its a ci/cd tool
+CI: Jenkins is continous integration (integration means adding) Contineous build + contineoustest 
+old code to new code. 
+
+Before ci: time waste manual work regular mistakes
+After ci: Time save automated work  bugs find more quickly
+
+CD: Cintineous Delivery/Contineous Deployment
+Contineous Delivery: Applicatio Manual deployment to production
+Contineous Deployment: Application to automation deployment to production
+Deployment: Process off installing the application to App server.  
+
+
+ENV 
+DEV: De velopers
+QA: Testers
+UAT: Client  
+PROD: USers
+
+ENV are two types:
+Pre-prod/Non-prod: DEV QAT UAT
+Live env  Prod: users
+
+                              //Pipeline//
+Code Compile Test Artifact Deployment
+Step by step execcution of a process.
+Series of interlinked with each others.
+
+                       //What is Jenkins//
+Jenkins is a free and opensource and ci tool.
+its written on java language.
+Jenkins is platform independent.
+Jenkins it will automate the ci and cd and Deployment.
+Jenkins it will automate the entire sdlc.
+it will have plegins to work and to automate.
+
+                //How to connwct the jenkins server// 
+                  public ip address  Port no 
+
+                 // How to work in jenkins?//
+      If you want to work in jenkins we need to create job.
+
+               //Jenkins default path var/lib/jenkins/workspace/netflix// 
+ll
+cd  var/lib/jenkins/workspace/netflix
+ll                target is available
+ll target/
+NETFLIX 12.3.WAR ----- DONE
+
+       ///200 To download url internet to server/// 
+
+
+
+
  
+
+
+
+
+
+
+
+
 
 
 
