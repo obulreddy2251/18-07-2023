@@ -348,6 +348,53 @@ line no 7 true ni flase
 systemctl restart jenkins
 
 
+WHEN WE CAN STOP AND START THE SERVER BY DEFAULT ALL SERVICES WILL BE ON STOPPED STATE.
+
+                          //Cron job//
+
+Cronjob is used to shedule the work in jenkins.
+EX; Deployment automation Data base backup automation Build automation
+*  Minutes  15 sec
+*  Hours    10 hr
+*  Date     22
+*  Month    6
+*  Day (    5  
+Cron Syntox: m h d m d  
+Crontab search for browser
+
+Biuld trigger ()build periodically   shedule 12 10 22 6 5  save Automarically build is shedue.
+Limitation: We cant check the source 
+
+                          //Pollscm//
+Pollscm is used to it  will trigger the buid when code is changed in given time
+pollscm  shedule 10 15 4 6 9 save then go to change the source code it will automaticall build is trigger
+LIMITATION:
+llam shedule but developer we can change the code 6am  (time waste)
+11am  i can change 5 time cobe but it will trigger only 5th build (builds waste)
+
+
+                          //WEBHOOK//
+WHEN WE CAN CHANGE THE CODE THEN AUTOMATICALLY TRIGGER THE BUILD(EVERY TIME)
+ 
+GITHUB HOOK TRIGGER FOR GITSCM POLLING (ENABLE) SAVE.
+
+SETTINGS Webhooks Addwebhook  Payloadurl jenkinsurl paste(8080/github-webhook/)
+content type  Application json select  Addwebhook.
+We have change code then it will trigger build(same repeate).
+
+                          //THROTTLE BUILD// 
+It will restrtic the number of builds per interval.
+create a ci job -- > Throttle build -- > builds: 3 time period: hours -- > save
+make a build and test
+
+          //Instace capacity change// 
+Actions  Instance settings  Change Instance Type.
+    
+
+
+
+
+
 
 
  
