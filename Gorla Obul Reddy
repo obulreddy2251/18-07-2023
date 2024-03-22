@@ -329,6 +329,28 @@ Jenkins enroirment variables:
 These variables will be given by jenkins.
 User cant define jenkins variables.
 
+            //JENKINS ADMIN ACTIVITIES//
+Jenkins port number changing?
+vim  /usr/lib/systemd/system/jenkins.service
+line no 67
+systemd back ground service we need to reload
+systemctl daemon-reload
+systemctl restart jenkins.serve
+
+              //How to restore delete job//
+Manage Jenkins Plegins Available plegin  Job Configuration History thse plegin download
+
+              //PASSWORD LESS login//
+vim /var/lib/jenkins/config.xml
+line no 7 true ni flase
+      (or)
+/true search and false to give and save
+systemctl restart jenkins
+
+
+
+
+ 
 
 
 
