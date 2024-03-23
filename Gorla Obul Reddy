@@ -391,7 +391,66 @@ make a build and test
 Actions  Instance settings  Change Instance Type.
     
 
+                      //Pipe line//
+Code-compile-Test-Artifact-Deployment.
+Step by step execcution of a process.
+Series of interlinked with each others.
 
+Pipeline Advantage:
+it is used to automate the work.
+it is used to save time.
+
+Pileline are two types?
+1) Scripted pipeline
+2) Declarative pipeline (Highly used)
+
+Declarative Pipeline:
+its a pipeline used to divide the work into stages and steps.
+each stage will have one or more than on step.
+we use groovy syntax for pipeline.
+we can use pipeline for creating ci cd process.
+we can integrate all tools with pipeline.
+
+
+ Pipeline:
+pipeline {
+    agent any   which worker node you  are executing (master and slave )
+                Which server you sre executing //ey worker node execute chesthunav
+    stages { 
+        stage('one') {
+            steps {
+                sh 'touch file1'
+cd /var/lib/jenkins/workspace/pipeline
+
+CI PIPELINE: build + test
+
+
+pipeline {
+    agent any
+    
+    stages {
+        stage('checkout') {
+            steps {
+                git 'https://github.com/devopsbyraham/jenkins-java-project.git'
+            }
+        }
+        stage('compile') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('artifact') {
+            steps {
+                sh 'mvn clean package'
+            }
+          }
+    }
+}
 
 
 
