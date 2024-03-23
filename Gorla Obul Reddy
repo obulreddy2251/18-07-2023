@@ -469,6 +469,33 @@ slaves are platform independent.
 label: way of assigning work to particular slave.
 
 
+Dashboard -- > Manage Jenkins -- >Nodes -- > New node-- > name: salve1 -- > Permanent Agent -- > create 
+
+Number of executors	: 3 (number of paraller build we can do)
+Remote root directory   : /tmp (where your op is going to store)
+Labels			: name (way of assigning work to particular slave)
+Usage			: last opt
+Launch method		: last opt
+Host			: private-ip of slave
+Credentials		: add -- > jenkins -- > 
+kind: ssh username with privatekey
+Username: ec2-user
+Private Key: enter directtly -- > copy paste the pem content
+Host Key Verification Strategy: last opt
+
+
+Dashboard netflix cinfigure -- > Restrict where this project can be run -- > salve1 -- > save
+
+buid fail -- > why -- > no pkgs 
+yum install git java-1.8.0-openjdk maven -y
+
+
+
+
+
+
+
+
 
 
 
