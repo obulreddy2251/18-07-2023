@@ -453,6 +453,23 @@ pipeline {
 }
 
 
+                    //Master and slave//
+I have three jobs contineous build it will get load then server is crashed.
+
+                  //MASTER AND SLAVE//
+when we continously build jobs on jenkins ,it will get load and have the chance to crash.
+to avoid this load on jenkins we use salve servers to build the jobs
+
+slaves are our ec2-servers
+jenkins slaves are used to build the jobs
+master will commnicate with salve using ssh.
+here on slave agent should be installed (java-11)
+without java-11 our slaves will not work.
+slaves are platform independent.
+label: way of assigning work to particular slave.
+
+
+
 
 
 
