@@ -1,0 +1,35 @@
+                                    //What is git ?
+Git is a distributed version control system 
+git is used to we can track the multipul files
+It allows multiple developers to collaborate on projects
+it will maintain multiple version of the same file.
+it is platform independent and it is free opensource
+They can handle large projects of efficently
+
+
+                                  // How does Git differ from other version control systems like SVN?
+while using svn is centralized version control system 
+we can track the code and change code in a single file or single repository.
+
+while using git is Distributed version control system 
+we can track the code and change code in a multipul file or multipul repository.
+
+                                  //How do you resolve merge conflicts in Git?
+we can merge 2 diffrent branches with same file and different code conflcits will occur.
+how to resolve: manually
+
+
+                                  //What is gitbub?
+github is distributed version control system
+its a remote repo.
+we can store source code on internet.
+if we delete code on local we can get from github or internet.
+we can merge code of multiple developers.
+
+
+
+
+
+
+
+
