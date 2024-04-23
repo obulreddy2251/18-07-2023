@@ -58,7 +58,7 @@ vim /etc/ansible/hosts (line 12)
 172.31.12.32
 
 ssh-keygen -- > enter -- > enter -- > enter -- > enter
-
+ssh-copy-id ansible@private ip of dev-1 -- > yes -- > password -- > ssh private ip of dev-1 -- > ctrl 
 ssh-copy-id root@private ip of dev-1 -- > yes -- > password -- > ssh private ip of dev-1 -- > ctrl d
 ssh-copy-id root@private ip of dev-2 -- > yes -- > password -- > ssh private ip of dev-2 -- > ctrl d
 ssh-copy-id root@private ip of test-1 -- > yes -- > password -- > ssh private ip of test-1 -- > ctrl d
