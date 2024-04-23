@@ -81,7 +81,7 @@ ansible all -a "systemctl status httpd"
 ansible all -a "systemctl start httpd"
 
 HISTROY:
- 1  passwd root
+ 1  passwd root 
     3  vim /etc/ssh/sshd_config
     4  systemctl restart sshd
     5  systemctl status sshd
@@ -115,7 +115,9 @@ HISTROY:
    33  ansible all -a "mkdir abcd"
    34  ansible all -a "ls"
    35  ansible all -a "ll"
-   36*
+
+   36* ansible all -m shell -a date
+
    37  ansible all -a "ll /root"
    38  ansible dev -a "ls"
    39  vim /etc/hosts
