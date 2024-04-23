@@ -48,14 +48,14 @@ hostname -i
 ANSIBLE SERVER:
 amazon-linux-extras install ansible2 -y
 yum install python3 python-pip python-dlevel -y
-vim /etc/ansible/hosts (line 12)
+vim /etc/ansible/hosts (line 12) (sudo less /etec/ansible/hosts) default path 
 
-[dev]
-172.31.15.213
-172.31.1.97
-[test]
-172.31.0.128
-172.31.12.32
+[dev]              [appserver]
+172.31.15.213        Host1
+172.31.1.97          Host2
+[test]             [web server]
+172.31.0.128         Hosts5
+172.31.12.32         Host6
 
 ssh-keygen -- > enter -- > enter -- > enter -- > enter
 ssh-copy-id ansible@private ip of dev-1 -- > yes -- > password -- > ssh private ip of dev-1 -- > ctrl 
