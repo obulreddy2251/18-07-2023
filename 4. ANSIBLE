@@ -897,5 +897,10 @@ ansible-playbook raju.yml --step    Task gathering facts yes or no
  
 ansible all -m setup
 
+Tags Concept
 
+ansible-playbook raju.yml --tags 'install,start,copy'
+
+Skipping one task is skip but ramaning is execute
+ansiple-playbook raju.yml --skip-tags "
 
