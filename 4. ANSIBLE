@@ -816,3 +816,86 @@ HISTORY:
   326  ll
   327  cd
   328  history
+===============================================================================
+                         //Ansible Play book//
+Introduction
+What is Ansible
+Configuration Management
+Ansible Architecture
+Host Inventory file
+Ansible Installation
+Ansible Commands
+Develop the ansible playbbok
+Tags
+Handlers
+Group variable and Host Variables
+Loops
+Conditions statements
+Ansible vault
+Ansible Roles
+Normal user cant access
+vim /etc/ansible/hosts
+sudo vim /etc/ansible/hosts
+if you want to see verbose mode
+ansible-playbook raju.yml -v try -vv try -vvv  verbose mode
+
+ansible-playbook --help             :if you want to see more information
+ansible-playbook --check raju.yml    : Dry run
+ls -l /tmp/                          : Where my ansible is running
+ansible-playbook --syntax-check raju.yml  
+ansible-playbook --list-host raju.ym   : to list all hostnames
+sudo vi /etc/ansible/ansible.cfg
+sudo passwd ec2-user                   :How to set the password
+new passwd:123  re type paawd:123   ssh-copy-id ec2-user@id paste
+
+ { ////File modules in ansible search/////}
+ chmod
+yum install git -y
+yum install maven -y
+yum install git httpd vim zip unzip -y
+
+Loops Intalling pkgs 
+----
+- hosts: all
+  become: true
+  tasks: 
+    - name: installing list of pkgs
+      yum: name="{{item}}" state=present      item means iterating the packages
+      with_item:
+       - git
+       - httpd
+       - vim
+       - zip
+       - unzip
+...
+
+- hosts: all
+  become: true
+  tasks: 
+    - name: installing list of pkgs
+      yum: name= ['git', 'httpd', 'vim', 'zip', 'unzip'] 
+           state=present
+
+               ////Create user//
+- hosts: all
+  become: true
+  tasks: 
+    - name: Creating the user
+      user: name"{{item}}"
+  with_items:
+   - obul
+   - reddy
+   - balaji
+ls -l /home    this is home directory
+ 
+
+Conditional statements
+
+When condition is satisfied then it will be execute?
+
+ansible-playbook raju.yml --step    Task gathering facts yes or no
+ 
+ansible all -m setup
+
+
+
