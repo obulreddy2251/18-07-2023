@@ -127,6 +127,9 @@ HISTROY:
    43  scp abc root@172.31.15.213:/root
    44  history
 
+How to copy
+ansible all -m copy -a "src=mithuntechnoligies.txt dest=/tmp/mithuntechnologies.txt"
+
 ==========================================================================
 DAY-02: 29-09-2023 : modules & playbooks, tags 
 
@@ -174,7 +177,7 @@ vim raham.yml
 
     - name: installing docker
       yum: name=docker state=present
-
+ 
     - name: starting docker
       service: name=docker state=started
 
