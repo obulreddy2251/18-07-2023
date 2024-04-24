@@ -129,6 +129,7 @@ HISTROY:
 
 How to copy
 ansible all -m copy -a "src=mithuntechnoligies.txt dest=/tmp/mithuntechnologies.txt"
+scp filename user@ip:/
 
 ==========================================================================
 DAY-02: 29-09-2023 : modules & playbooks, tags 
